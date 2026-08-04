@@ -1,8 +1,7 @@
 const { cmd } = require('../lib/command');
 const axios = require('axios');
 const fs = require('fs');
-const { yts } = require('@distube/yts'); // if you use yts, otherwise import your own
-
+const yts = require('yt-search');
 // ---------- helpers ----------
 function isUrl(str) {
   return /^https?:\/\/\S+/.test(str);
