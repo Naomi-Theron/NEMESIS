@@ -47,3 +47,9 @@ ANTI_DELETE_TYPE: process.env.ANTI_DELETE_TYPE || "same",
 AUTO_RECORDING: process.env.AUTO_RECORDING || "true",
 AUTO_BLOCK: process.env.AUTO_BLOCK || "false"
 };
+
+global.siputzx = "https://api.siputzx.my.id" 
+global.wm = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ Kᴇᴠɪɴ ᴛᴇᴄʜ x Rɪᴅᴢ Cᴏᴅᴇʀ"
+global.mess = {
+        error: `❌ *An error occured while processing your request*`,
+}
