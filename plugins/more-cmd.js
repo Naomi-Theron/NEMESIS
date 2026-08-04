@@ -29,52 +29,6 @@ cmd({
 });
 
 // ============================================================
-//  EPHOTO360 TEXT EFFECTS
-// ============================================================
-// (All use a common pattern – we need the 'ephoto' function defined elsewhere)
-
-const ephotoEffects = [
-  { pattern: "advancedglow", link: "https://en.ephoto360.com/advanced-glow-effects-74.html" },
-  { pattern: "blackpinklogo", link: "https://en.ephoto360.com/create-blackpink-logo-online-free-607.html" },
-  { pattern: "blackpinkstyle", link: "https://en.ephoto360.com/online-blackpink-style-logo-maker-effect-711.html" },
-  { pattern: "cartoonstyle", link: "https://en.ephoto360.com/create-a-cartoon-style-graffiti-text-effect-online-668.html" },
-  { pattern: "deadpool", link: "https://en.ephoto360.com/create-light-effects-green-neon-online-429.html" },
-  { pattern: "effectclounds", link: "https://en.ephoto360.com/write-text-effect-clouds-in-the-sky-online-619.html" }, // typo kept
-  { pattern: "flagtext", link: "https://en.ephoto360.com/nigeria-3d-flag-text-effect-online-free-753.html" },
-  { pattern: "freecreate", link: "https://en.ephoto360.com/free-create-a-3d-hologram-text-effect-441.html" },
-  { pattern: "galaxystyle", link: "https://en.ephoto360.com/create-galaxy-style-free-name-logo-438.html" },
-  { pattern: "galaxywallpaper", link: "https://en.ephoto360.com/create-galaxy-wallpaper-mobile-online-528.html" },
-  { pattern: "makingneon", link: "https://en.ephoto360.com/making-neon-light-text-effect-with-galaxy-style-521.html" },
-  { pattern: "matrix", link: "https://en.ephoto360.com/matrix-text-effect-154.html" },
-  { pattern: "royaltext", link: "https://en.ephoto360.com/royal-text-effect-online-free-471.html" },
-  { pattern: "sand", link: "https://en.ephoto360.com/write-in-sand-summer-beach-online-576.html" },
-  { pattern: "summerbeach", link: "https://en.ephoto360.com/write-in-sand-summer-beach-online-free-595.html" },
-  { pattern: "topography", link: "https://en.ephoto360.com/create-typography-text-effect-on-pavement-online-774.html" },
-  { pattern: "typography", link: "https://en.ephoto360.com/create-typography-text-effect-on-pavement-online-774.html" },
-  { pattern: "luxurygold", link: "https://en.ephoto360.com/create-a-luxury-gold-text-effect-online-594.html" }
-];
-
-for (const effect of ephotoEffects) {
-  cmd({
-    pattern: effect.pattern,
-    react: "🌋",
-    desc: `Generate a "${effect.pattern}" text effect`,
-    category: "image",
-    use: `.${effect.pattern} <text>`,
-    filename: __filename
-  }, async (conn, mek, m, { from, q, reply }) => {
-    if (!q) return reply(`*Example: ${prefix || '.'}${effect.pattern} Ridz Coder*`);
-    try {
-      const result = await ephoto(effect.link, q); // ephoto() must be defined
-      await conn.sendMessage(from, { image: { url: result }, caption: `> ${global.wm || 'NEMESIS MD'}` }, { quoted: mek });
-    } catch (error) {
-      console.error(`Error in ${effect.pattern}:`, error);
-      reply("*An error occurred while generating the effect.*");
-    }
-  });
-}
-
-// ============================================================
 //  IMDB / MOVIE
 // ============================================================
 
