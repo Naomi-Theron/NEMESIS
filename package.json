@@ -13,6 +13,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@sl-code-lords/movie-api": "latest",
     "@whiskeysockets/baileys": "git+https://lyfe00011-admin@bitbucket.org/lyfe00011/baileys.git",
+    "yt-search": "^2.11.4",
     "adm-zip": "latest",
     "api-dylux": "latest",
     "axios": "latest",
