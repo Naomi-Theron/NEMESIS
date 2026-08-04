@@ -1,7 +1,7 @@
 const { cmd } = require('../lib/command');
 const axios = require('axios');
 const fs = require('fs');
-const { yts } = require('yts-search'); // adjust import
+const { yts } = require('yt-search'); // adjust import
 const googleTTS = require('google-tts-api'); // or your TTS lib
 const acr = require('acrcloud'); // or your ACRCloud instance
 // … other imports (ephoto, AI functions, etc.) are expected to be defined elsewhere
