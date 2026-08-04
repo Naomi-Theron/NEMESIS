@@ -12,7 +12,7 @@ bardAICommand,
 gpt4NanoAICommand,
 kelvinAICommand,
 claudeAICommand
-} = require('./lib/ai');
+} = require('../lib/ai');
 const { default: WAConnection, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, getBinaryNodeChildren,
 getDevice, useMultiFileAuthState, generateWAMessageContent, downloadContentFromMessage, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@whiskeysockets/baileys');
 
