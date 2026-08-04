@@ -13,6 +13,9 @@ gpt4NanoAICommand,
 kelvinAICommand,
 claudeAICommand
 } = require('./lib/ai');
+const { default: WAConnection, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, getBinaryNodeChildren,
+getDevice, useMultiFileAuthState, generateWAMessageContent, downloadContentFromMessage, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@whiskeysockets/baileys');
+
 // … other imports (ephoto, AI functions, etc.) are expected to be defined elsewhere
 
 // ============================================================
