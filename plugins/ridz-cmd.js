@@ -3,7 +3,7 @@ const axios = require('axios');
 const fs = require('fs');
 const { yts } = require('yt-search');
 const { ImageUploadService } = require('node-upload-images');
-const { pinterest, pinterest2, remini, mediafire, tiktokDl } = require('./lib/scraper');
+const { pinterest, pinterest2, remini, mediafire, tiktokDl } = require('../lib/scraper');
 // These helpers must be defined in your environment:
 //  - generateProfilePicture (for setppbot long mode)
 //  - tiktokDl (for TikTok download)
