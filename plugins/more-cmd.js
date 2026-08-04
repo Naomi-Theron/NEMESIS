@@ -4,6 +4,15 @@ const fs = require('fs');
 const { yts } = require('yt-search'); // adjust import
 const googleTTS = require('google-tts-api'); // or your TTS lib
 const acr = require('acrcloud'); // or your ACRCloud instance
+const {
+veniceAICommand,
+mistralAICommand,
+perplexityAICommand,
+bardAICommand,
+gpt4NanoAICommand,
+kelvinAICommand,
+claudeAICommand
+} = require('./lib/ai');
 // … other imports (ephoto, AI functions, etc.) are expected to be defined elsewhere
 
 // ============================================================
