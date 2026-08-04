@@ -19,6 +19,7 @@
     "google-tts-api": "^2.0.2",
     "adm-zip": "latest",
     "api-dylux": "latest",
+        "node-upload-images": "^1.0.1",
     "axios": "latest",
     "buffer": "latest",
     "canvas": "latest",
